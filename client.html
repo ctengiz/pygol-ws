@@ -4,6 +4,8 @@
         <title>WebSocket demo</title>
     </head>
     <body>
+        <canvas id="gol" width="200" height="100"></canvas>
+
         <script>
             var ws = new WebSocket("ws://127.0.0.1:5678/"),
                 messages = document.createElement('ul');
@@ -14,7 +16,11 @@
                 message.appendChild(content);
                 messages.appendChild(message);
             };
+
+            /*
             document.body.appendChild(messages);
+
+            */
         </script>
     </body>
 </html>
